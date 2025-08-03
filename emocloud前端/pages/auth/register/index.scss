@@ -1,0 +1,115 @@
+.page{
+	min-height: 100vh;
+	background: transparent;
+	
+	.header{
+		height: 30vh;
+		background: #aa0000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		.logo{
+			height: 200rpx;
+			width: 200rpx;
+			margin-top: -100rpx;
+			
+			image{
+				height: 200rpx;
+				width: 200rpx;
+			}
+		}
+	}
+	
+	.login{
+		height: 700rpx;
+		width: 680rpx;
+		padding: 20rpx;
+		border-radius: 12rpx;
+		background: #550000;
+		margin: -100rpx auto auto auto;
+		box-shadow: #ccc 0px 3px 6px;
+		box-sizing: border-box;
+		
+		.title{
+			font-size: 20px;
+			line-height: 120rpx;
+			color: #444;
+			text-align: center;
+		}
+		
+		.block{
+			display: flex;
+			align-items: center;
+			height: 100rpx;
+			width: 640rpx;
+			border-bottom: 1px solid #ccc;
+			margin: 40rpx 0;
+			position: relative;
+			
+			.icon{
+				width: 80rpx;
+				height: 80rpx;
+				image{
+					margin: 15rpx;
+					width: 50rpx;
+					height: 50rpx;
+				}
+			}
+			
+			.input{
+				width: calc(640rpx - 80rpx);
+				font-size: 14px;
+				
+				input{
+					height: 80rpx;
+				}
+			}
+			
+			.send-button{
+				position: absolute;
+				right: 0;
+				top: 10rpx;
+				height: 80rpx;
+				width: 220rpx;
+				text-align: center;
+				line-height: 80rpx;
+				font-size: 12px;
+				color: #ff0000;
+				z-index: 99;
+			}
+		}
+		
+		.change-type{
+			width: 640rpx;
+			text-align: right;
+			margin-bottom: 60rpx;
+			
+			text{
+				padding: 5rpx;
+				font-size: 12px;
+				color: #0D96FE;
+				
+				&:active{
+					color: #3771F9;
+				}
+			}
+		}
+		
+		.button{
+			width: 500rpx;
+			height: 80rpx;
+			border-radius: 30rpx;
+			text-align: center;
+			line-height: 80rpx;
+			font-size: 16px;
+			color: #fff;
+			background: linear-gradient(to right, #0D96FE, #3771F9);
+			margin: auto;
+			
+			&:active{
+				background: #3771F9;
+			}
+		}
+	}
+}

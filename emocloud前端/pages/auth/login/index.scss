@@ -1,0 +1,254 @@
+.page {
+	    min-height: 100vh;
+		 overflow: hidden; // 禁止滚动
+		//选择2
+	    background: #fff8e9;
+	    background-size: 200% 200%;
+	    animation: gradient 8s ease infinite;
+		position:relative;//背景相对定位
+		//background: linear-gradient(to bottom, #b3c1ff, #f0f0ff); // 渐变色背景
+		z-index:1;
+		
+		body {
+		    margin: 0;
+		    height: 100vh;
+		    background: linear-gradient(to right, #FFB6C1, #FFE4B5, #CCE5FF);
+		    background-size: 300% 300%;
+		    animation: gradient 10s ease infinite;
+		}
+		
+		@keyframes gradient {
+		    0% {
+		        background-position: 0% 50%;
+		    }
+		    50% {
+		        background-position: 100% 50%;
+		    }
+		    100% {
+		        background-position: 0% 50%;
+		    }
+		}
+	// /////这里看不到是为甚？	
+	// .emjoy-cloud {
+	//   background-image: url('https://static.canva.cn/web/images/6d796dc38a9b4bf5d4263b84a2224cc0.svg');
+	//    position: relative;
+	//       top: 40vh; // 根据需要调整位置
+	//       left: 50%;
+	//       transform: translateX(-50%); // 水平居中
+	//       z-index: 2; // 图片图层的 z-index
+	//       width: 150px; // 根据需要调整大小
+	//       height: auto;
+	// }
+	//星星
+	.floating-stars {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  pointer-events: none; /* 防止星星遮挡交互 */
+	  z-index: 9; /* 放在背景层 */
+	}
+	
+	.star {
+	  position: absolute;
+	  display: inline-block;
+	  color: rgba(255, 215, 0, 0.7); /* 金色半透明 */
+	  user-select: none;
+	}
+	
+	@keyframes float {
+	  0% {
+	    transform: translateY(0) rotate(0deg);
+	    opacity: 0.3;
+	  }
+	  50% {
+	    opacity: 0.8;
+	  }
+	  100% {
+	    transform: translateY(-100vh) rotate(360deg);
+	    opacity: 0.3;
+	  }
+	}
+	
+	img {
+	  max-width: 100%; // 确保图片不会超出容器宽度
+	  height: auto; // 保持图片的原始宽高比
+	  display:block;
+	}
+	// </style>
+
+	.header {
+	        height: 0vh;
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	        position: relative;
+	        z-index: 10; // 确保标题在最上层
+			
+	//?我没有显示出来
+	        .logo {
+	            height: 0px;
+	            width: 3px;
+				color: #ffffff;
+	            margin-top: 1px;
+	
+	            image {
+	                height: 100rpx;
+	                width: 200rpx;
+	            }
+	        }
+				
+			.pic{
+				margin-top: -240px;
+				    margin-left: -73px;
+				    margin-right: 20px;
+				    padding: 20px; // 内边距，可选
+				font-size: 80px;
+				position:absolute;
+				text-align: center;
+			}
+	//EMOCloud
+	        .app-name {
+				margin-top: -143px;
+				    margin-left: -128px;
+				    margin-right: 20px;
+				    padding: 20px; // 内边距，可选
+	            font-size: 40px;
+				position:absolute;
+	            font-weight: bold;
+				font-style: italic;
+	            color: #550000;
+				text-align: center;
+	        }
+			.welcome-text{
+				margin-top: -105px;
+				    margin-left: -90px;
+				    margin-right: 20px;
+				    padding: 20px; // 内边距，可选
+				position:absolute;
+				 font-size: 9px;
+				 color: #888;
+				 text-align: center;
+				 font-style: italic;
+				 font-family: 'Roboto', sans-serif; // 更换字体为 Roboto
+			}
+	    }
+	
+	
+	//那个便签
+	.login {
+	        height:830rpx;
+	        width: 750rpx;
+	        padding: 20rpx;
+	        border-radius: 85rpx;
+	        background: #fff8e9;
+	        margin: auto; // 居中对齐
+	        box-shadow: #9a9a9a 3px 6px 9px;
+	        box-sizing: border-box;
+			border-radius: 50px;
+			box-shadow: 0 -5px 12px rgba(3, 3, 3, 0.2);
+		/* 添加折叠角效果 */
+		    // &::before {
+		    //     content: "";
+		    //     position: absolute;
+		    //     top: 0;
+		    //     right: 0;
+		    //     width: 80rpx;
+		    //     height: 80rpx;
+		    //     background: linear-gradient(135deg, transparent 50%, #e0d8b0 50%);
+		    //     box-shadow: -4px 2px 3px rgba(0, 0, 0, 0.1);
+		    // }
+			border-top: 1px solid #550000;
+	        position: relative;
+			z-index:3;
+	        top: 0vh; // 将登录表单向下移动，使其在标题下方
+			
+	//登录
+	        .title {
+	            font-size: 24px;
+	            line-height: 120rpx;
+	            color: #5a3921;
+	            text-align: center;
+	            font-family: 'Roboto', sans-serif; // 更换字体为 Roboto
+	        }
+	//空格输入部分
+	        .block {
+	            display: flex;
+	            align-items: center;
+	            height: 100rpx;
+	            width: 600rpx;
+	            border-bottom: 1px solid #ccc;
+	            margin: 38rpx 0;
+	            position: relative;
+			// background-color: #ffffff;
+
+	            .icon {
+	                width: 40rpx;
+	                height: 60rpx;
+	
+	                image {
+	                    margin: 15rpx;
+	                    width: 50rpx;
+	                    height: 50rpx;
+	                }
+	            }
+				
+	            .input {
+	                width: 750rpx;
+	                font-size: 8px;
+					text-align: center;	
+	                input {
+	                    height: 180rpx;
+	                }
+	            }
+	
+	            .send-button {
+	                position: absolute;
+	                right: 0;
+	                top: 10rpx;
+	                height: 80rpx;
+	                width: 220rpx;
+	                text-align: center;
+	                line-height: 80rpx;
+	                font-size: 12px;
+	                color: #55ffff;
+	                z-index: 99;
+	            }
+	        }
+	//立即注册
+	        .change-type {
+	            width: 700rpx;
+	            text-align: center;	
+	            margin-bottom: 0rpx;
+				text-decoration: underline;
+				 text-decoration-color: #55007f;
+	            text {
+	                padding: 6rpx;
+	                font-size: 13px;
+	                color: #00c500;
+	
+	                &:active {
+	                    color: #550000;
+	                }
+	            }
+	        }
+	//登录按钮
+	        .button {
+	            width: 500rpx;
+	            height: 40rpx;
+	            border-radius: 90rpx;
+	            text-align: center;
+	            line-height: 40rpx;
+	            font-size: 16px;
+				//登录字体
+	            color: #fff;
+	            background: radial-gradient(circle, #550000, #550000);
+	            margin: auto;
+	
+	            &:active {
+	                background: #550000;
+	            }
+	        }
+	    }
+	}

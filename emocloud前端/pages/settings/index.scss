@@ -1,0 +1,119 @@
+.page {
+	background: linear-gradient(180deg, #4CAF50, #fff);
+	min-height: 100vh;
+	
+	.user{
+		display: flex;
+		align-items: center;
+		padding: 25rpx;
+		
+		&:active{
+			background: #3c8a3e;
+		}
+		
+		.avatar{
+			width: 90rpx;
+			height: 90rpx;
+			border-radius: 50%;
+		}
+		.right{
+			width: 30rpx;
+			height: 30rpx;
+		}
+		
+		.name{
+			height: 80rpx;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			padding-left: 20rpx;
+			color: #fff;
+			justify-content: space-between;
+			
+			text{
+				&:nth-child(1){
+					font-size: 16px;
+					font-weight: bold;
+				}
+				
+				&:nth-child(2){
+					font-size: 12px;
+					color: #f0f0f0;
+				}
+			}
+		}
+	}
+	
+	.card{
+		background: #fff;
+		box-sizing: border-box;
+		width: 700rpx;
+		margin: auto;
+		padding: 15rpx;
+		margin-top: 20rpx;
+		border-radius: 12rpx;
+		
+		.important{
+			display: flex;
+			justify-content: center;
+			
+			.item{
+				width: 225rpx;
+				padding: 15rpx 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-radius: 12rpx;
+				
+				&:active{
+					background: #f0f0f0;
+				}	
+				
+				image{
+					width: 80rpx;
+					height: 80rpx;
+					margin-bottom: 10rpx;
+				}
+				
+				text{
+					font-size: 12px;
+				}
+			}
+		}
+		
+		.menu{
+			
+			.item{
+				display: flex;
+				height: 100rpx;
+				align-items: center;
+				padding: 0 20rpx;
+				box-sizing: border-box;
+				width: 700rpx;
+				
+				&:active{
+					background: #f0f0f0;
+				}
+				
+				image{
+					height: 45rpx;
+					width: 45rpx;
+				}
+				
+				text{
+					font-size: 14px;
+					color: #444;
+					padding-left: 15rpx;
+					box-sizing: border-box;
+					width: calc(100% - 100rpx);
+				}
+				
+				.arrow{
+					width: 26rpx;
+					height: 26rpx;
+				}
+			}
+		}
+	}
+	
+}
