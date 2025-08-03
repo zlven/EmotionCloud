@@ -263,13 +263,14 @@ chore: 构建过程或辅助工具的变动
 - [uni-app](https://uniapp.dcloud.io/) - 优秀的跨平台框架
 - [Vue.js](https://vuejs.org/) - 渐进式JavaScript框架
 - [MySQL](https://www.mysql.com/) - 可靠的数据库系统
+- 我的初始团队成员们
 - 所有贡献者和支持者
 
 ## 📞 联系我们
 
-- 项目主页：[GitHub Repository](https://github.com/[your-username]/EmoCloud)
-- 问题反馈：[Issues](https://github.com/[your-username]/EmoCloud/issues)
-- 邮箱：[your-email]
+- 项目主页：[GitHub Repository](https://github.com/zlven/EmoCloud)
+- 问题反馈：[Issues](https://github.com/zlven/EmoCloud/issues)
+- 邮箱：[2602251703@qq.com]
 
 ## 🗺️ 路线图
 
