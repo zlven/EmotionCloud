@@ -7,7 +7,7 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue.svg)](https://www.mysql.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-EmoCloud是一个全栈情感管理和社交平台，旨在帮助用户记录、分析和管理情感状态，同时提供AI情感陪伴和社交互动功能。项目采用前后端分离架构，支持Web端和移动端多平台部署。
+EmoCloud是一个情感管理和社交平台，旨在帮助用户记录、分析和管理情感状态，同时提供AI情感陪伴和社交互动功能。项目采用前后端分离架构，支持Web端和移动端多平台部署。
 
 ## ✨ 主要功能
 
